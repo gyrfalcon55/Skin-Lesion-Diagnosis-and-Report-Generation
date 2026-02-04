@@ -1,0 +1,14 @@
+streamlit
+tensorflow
+opencv-python
+numpy
+pillow
+matplotlib
+langchain
+langchain-community
+faiss-cpu
+pypdf
+transformers
+torch
+langchain-ollama
+reportlab
