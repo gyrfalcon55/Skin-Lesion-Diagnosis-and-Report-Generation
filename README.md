@@ -111,11 +111,12 @@ The system supports classification of the following skin lesion categories:
 
 ## 🧪 How to Run the Project
 
-### Step 1: Clone the Repository
-
-### Step 2: Install Dependencies
-
-### Step 3: Run the Application
+### Note : Need to install Ollama and a local model
+### 1. Clone the project
+### 2. Run the below command in terminal
+```
+streamlit run app.py
+```
 
 ## 🚀 Future Enhancements
 
@@ -124,3 +125,4 @@ The system supports classification of the following skin lesion categories:
 - Multi-language patient reports  
 - Integration with hospital EMR systems  
 - Federated learning for privacy-preserving training  
+
