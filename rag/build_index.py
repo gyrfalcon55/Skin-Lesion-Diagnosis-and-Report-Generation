@@ -1,10 +1,10 @@
 import os
 
-from langchain_ollama import ChatOllama, OllamaEmbeddings
+from langchain_ollama import ChatOllama
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
-
+from langchain_huggingface import HuggingFaceEmbeddings
 
 # --------------------------------------------------
 # Initialize local LLM (optional, for testing later)
@@ -41,8 +41,8 @@ chunks = text_splitter.split_documents(documents)
 # --------------------------------------------------
 # Initialize Ollama embeddings
 # --------------------------------------------------
-embeddings = OllamaEmbeddings(
-    model="nomic-embed-text:latest"
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
 

@@ -12,3 +12,5 @@ transformers
 torch
 langchain-ollama
 reportlab
+langchain-huggingface
+sentence-transformers

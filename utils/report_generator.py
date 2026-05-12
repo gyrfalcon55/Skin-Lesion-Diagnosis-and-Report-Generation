@@ -1,16 +1,17 @@
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain_community.chat_models import ChatOllama
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+from langchain_huggingface import HuggingFaceEmbeddings
 
-
-# --------------------------------------------------
-# Load embeddings and FAISS vector store
-# --------------------------------------------------
-embeddings = OllamaEmbeddings(
-    model="nomic-embed-text"
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
+
+load_dotenv()
+
 
 vector_store = FAISS.load_local(
     "rag/vectorstore",
@@ -22,8 +23,8 @@ vector_store = FAISS.load_local(
 # --------------------------------------------------
 # Initialize local LLM (Ollama)
 # --------------------------------------------------
-llm = ChatOllama(
-    model="llama3.2:latest",
+llm = ChatGroq(
+    model="llama-3.1-8b-instant",
     temperature=0.3  # lower temperature for safer medical responses
 )
 
