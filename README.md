@@ -35,11 +35,12 @@ The proposed framework consists of the following components:
 - Separates lesion region (ROI) from background skin  
 - Helps the classifier focus on the affected area  
 - Improves overall classification accuracy  
+<img width="1408" height="768" alt="u-net architecture" src="https://github.com/user-attachments/assets/a41760f7-87a8-499c-aa58-321a7fa8e87d" />
 
 ### 3. Skin Lesion Classification
 - EfficientNet-based Convolutional Neural Network  
 - Extracts discriminative features such as color, texture, and shape  
-- Classifies lesions into multiple disease categories with confidence scores  
+- Classifies lesions into multiple disease categories with confidence scores
 
 ### 4. Explainable AI (Grad-CAM)
 - Generates heatmaps highlighting important image regions  
