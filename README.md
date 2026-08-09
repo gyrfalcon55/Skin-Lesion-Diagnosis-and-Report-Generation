@@ -1,5 +1,7 @@
-# 🩺 An EfficientNet-Based Framework for Automated Skin Lesion Diagnosis  
-## With Clinical and Patient-Centric Report Generation
+<img width="1376" height="768" alt="github thumbnail" src="https://github.com/user-attachments/assets/6c743893-05d3-4526-b012-6f85abd29666" />
+
+---
+# 🩺 An EfficientNet-Based Framework for Automated Skin Lesion Classification with Clinical and Patient-Centric Report Generation
 
 ---
 
@@ -119,17 +121,6 @@ The system supports classification of the following skin lesion categories:
 ```
 streamlit run app.py
 ```
-
----
-
-<img width="1763" height="603" alt="segmentation_and_prediction_2" src="https://github.com/user-attachments/assets/c9aa7661-b941-433f-9096-928697ae0afe" />
-<img width="1909" height="910" alt="input_2" src="https://github.com/user-attachments/assets/c068b633-9c09-44ff-abe5-1c65c839ecfc" />
-<img width="1781" height="658" alt="gradcam_2" src="https://github.com/user-attachments/assets/7b4f4f8d-199c-4b73-8af2-983a641876b1" />
-<img width="1754" height="757" alt="doctorreport_2" src="https://github.com/user-attachments/assets/1d184943-1bdb-43f7-a9a7-9d8ab6ed7bf3" />
-<img width="1770" height="837" alt="patientreport_2" src="https://github.com/user-attachments/assets/849ba653-8e5c-490e-9467-339b8a8d1641" />
-
----
-
 
 ## 🚀 Future Enhancements
 
